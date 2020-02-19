@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>homeWork2</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		.clearfix:before,
+		.clearfix:after{
+			content: '';
+			display: block;
+			clear: both;
+			float: none;
+		}
+
+		.Header {
+			margin: auto;
+			width: 1000px;
+			position: relative;
+			background-color: #d3e5f5;
+		}
+
+		.Logo_wrapper {
+			display: block;
+			float: left;
+		}
+
+		.Logo {
+			display: block;
+		}
+
+		.Navigation {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+			float: right;
+		}
+
+		.Navigation_link {
+			display: block;
+			float: left;
+			margin-left: 40px;
+			padding: 4px;
+			text-decoration: none;
+			font-size: 20px;
+			font-style: italic;
+			font-weight: bold;
+			color: white;
+			background-color: #65776c;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header class="Header clearfix">
+		<a href="#" class="Logo_wrapper">
+			<img src="https://placehold.it/150x50" alt="Logo" class="Logo" width="100" height="50">
+		</a>
+		<nav class="Navigation clearfix">
+			<a href="#" class="Navigation_link">Главная</a>
+			<a href="#" class="Navigation_link">Форум</a>
+			<a href="#" class="Navigation_link">О нас</a>
+			<a href="#" class="Navigation_link">FAQ</a>
+			<a href="#" class="Navigation_link">Контакты</a>
+		</nav>
+	</header>
+</body>
+</html>
